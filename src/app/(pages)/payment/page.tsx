@@ -6,7 +6,7 @@ import CheckoutForm from './CheckoutForm'
 import { useSelector } from 'react-redux'
 import { useUser } from '@clerk/nextjs'
 
-const page = () => {
+const PaymentPage = () => {
     const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY as any);
     const { productData } = useSelector((state: any) => state.next)
     const { user } = useUser()
@@ -28,4 +28,4 @@ const page = () => {
     )
 }
 
-export default page
+export default PaymentPage

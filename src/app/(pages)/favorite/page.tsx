@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import FavoriteProduct from './FavoriteProduct';
 import ResetFavoriteItems from './ResetFavoriteItems';
 
-const page = () => {
+const favoritePage = () => {
     const { favoriteData } = useSelector((state: any) => state.next);
 
     return (
@@ -41,4 +41,4 @@ const page = () => {
     )
 }
 
-export default page
+export default favoritePage
